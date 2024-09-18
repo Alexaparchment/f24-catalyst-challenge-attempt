@@ -63,11 +63,8 @@
             
             // Add non-empty string todos to the todo list
             // YOUR CODE HERE 
-            todoList.push("apply to y/cs")
-            todoList.push("pick my classes")
-            todoList.push("eat with suite")
-        
-            
+            addTodo(createdTodo);
+            refreshTodoList();
 
             // reset the input value after add todo is clicked.
             todoInput.value = '';
@@ -115,7 +112,7 @@
 
         function addTodo(todo) {
             // YOUR CODE HERE (recycle your work from former tasks)
-            todoList.push(todoString);
+            todoList.push(todo);
             refreshTodoList()
         }
     </script>
