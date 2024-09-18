@@ -63,6 +63,11 @@
             
             // Add non-empty string todos to the todo list
             // YOUR CODE HERE 
+            todoList.push("apply to y/cs")
+            todoList.push("pick my classes")
+            todoList.push("eat with suite")
+        
+            
 
             // reset the input value after add todo is clicked.
             todoInput.value = '';
@@ -90,11 +95,27 @@
 
         function deleteTodo(index) {
             // YOUR CODE HERE (recycle your work from former tasks)
-            refreshTodoList()
-        }
+            console.log("Before: " + todoList)
+            if(index ==0){
+                todoList.splice(index, index +1)
+            }
+            else{
+                todoList.splice(index, index)
+            }
+            
+            console.log("After:" + todoList)
+                    refreshTodoList()
+                }
+            function printTodo() {
+                console.log("TODOS:");
+                todoList.forEach((element) => {
+                console.log(element)
+                    })
+                }    
 
         function addTodo(todo) {
             // YOUR CODE HERE (recycle your work from former tasks)
+            todoList.push(todoString);
             refreshTodoList()
         }
     </script>
